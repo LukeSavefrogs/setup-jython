@@ -88,6 +88,7 @@ runs:
                 --silent \
                 --directory ${{ inputs.installation-path }} \
                 --type standard;
+                
             printf "Jython installed in the directory '%s'\n\n" "${{ inputs.installation-path }}"
 
     - name: Setup Jython alias
@@ -96,6 +97,6 @@ runs:
         installation_path="$(sed -r 's/^\s+//; s/\s+$//; ' <<< "${{ inputs.installation-path }}")"
 
         mkdir -p ~/.local/bin;
-        echo 'java -jar ${installation_path}/jython.jar "$@"' >> ~/.local/bin/jython;
+        printf 'java -jar %s/jython.jar "$@"\n' "${installation_path}" >> ~/.local/bin/jython;
         chmod +x ~/.local/bin/jython;
         echo ~/.local/bin >> $GITHUB_PATH
