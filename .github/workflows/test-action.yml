@@ -33,8 +33,6 @@ jobs:
         run:
           shell: bash
     steps:
-    - uses: actions/checkout@v3
-
     - name: Install Jython ${{ matrix.jython_version }}
       uses: LukeSavefrogs/setup-jython@v1
       with:
