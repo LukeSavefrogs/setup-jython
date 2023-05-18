@@ -41,7 +41,8 @@ runs:
         fi
 
         echo "Download URL: ${download_url}"
-        echo "::set-output name=download_url::${download_url}"
+        echo "download_url=${download_url}" >> $GITHUB_OUTPUT
+
 
     - name: Download Jython Installer
       shell: bash
@@ -82,8 +83,6 @@ runs:
                 --silent \
                 --directory ~/jython/ \
                 --type standard;
-            
-            echo "::set-output name=download_url::${download_url}"
     
     - name: Setup Jython alias
       shell: bash
