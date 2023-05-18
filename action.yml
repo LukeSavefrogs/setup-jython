@@ -95,7 +95,7 @@ runs:
     - name: Setup Jython alias
       shell: bash
       run: |
-        installation_path="$(sed -r 's/^\s+//; s/\s+$//; ' <<< "${{ inputs.installation-path }}")"
+        installation_path="$(sed -r 's/^\s+//; s/\s+$//; s/\/+$//;' <<< "${{ inputs.installation-path }}")"
 
         mkdir -p ~/.local/bin;
         printf 'java -jar %s/jython.jar "$@"\n' "${installation_path}" >> ~/.local/bin/jython;

@@ -22,7 +22,7 @@ jobs:
     - name: Run Jython
       shell: bash
       run: |
-        [[ -f "~/jython/jython.jar" ]] || exit 1
+        [[ -f ~/jython/jython.jar ]] || exit 1
 
   custom_path:
     name: "Using a custom path"
