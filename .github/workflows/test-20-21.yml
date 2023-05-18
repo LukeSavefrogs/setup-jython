@@ -1,0 +1,41 @@
+name: "Setup Jython"
+
+on:
+  push:
+
+jobs:
+  setup-jython:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-20.04
+        #   - windows-latest
+        #   - macos-latest
+        jython_version:
+        #   - "2.7.3"
+        #   - "2.7.2"
+        #   - "2.7.1"
+        #   - "2.7.0"
+        #   - "2.5.3"
+        #   - "2.5.2"
+        #   - "2.5.1"
+        #   - "2.5.0"
+        #   - "2.2.1"
+          - "2.2"
+          - "2.1"
+          - "2.0"
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Jython ${{ matrix.jython_version }}
+        uses: ./
+        with:
+          jython-version: "${{ matrix.jython_version }}"
+
+      - name: Run Jython
+        shell: bash
+        run: |
+          output="$(jython -c 'import sys, os; print(os.name, sys.version); print "\n\nJython Works!\n\n"')";
+          echo "$output";
+          echo "$output" | grep -q "Jython Works!";
