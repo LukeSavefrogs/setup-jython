@@ -1,6 +1,6 @@
-name: "Jython tests"
+name: "Input - Installation path"
 
-run-name: "Run Jython tests"
+run-name: "Installation path"
 
 on:
   push:
