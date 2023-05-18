@@ -168,7 +168,7 @@ runs:
         if [[ -d "${installation_path}/org" ]]; then
         cat - <<EOF | sed -r 's/^\s*//' >> ~/.local/bin/jython && chmod +x ~/.local/bin/jython
           #!/bin/bash
-          java -classpath "${installation_path}/jython.jar:${installation_path}:$CLASSPATH" org.python.util.jython -Dpython.home="${installation_path}" "\$@";
+          java -classpath "${installation_path}/jython.jar:${installation_path}:${CLASSPATH:-.}" org.python.util.jython -Dpython.home="${installation_path}" "\$@";
         EOF
         
         elif [[ -f ${installation_path}/jython.jar ]]; then
