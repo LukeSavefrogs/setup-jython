@@ -34,7 +34,7 @@ jobs:
           shell: bash
     steps:
     - name: Install Jython ${{ matrix.jython_version }}
-      uses: LukeSavefrogs/setup-jython@v1
+      uses: LukeSavefrogs/setup-jython@main
       with:
         jython-version: "${{ matrix.jython_version }}"
 
