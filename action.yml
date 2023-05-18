@@ -5,7 +5,12 @@ inputs:
   jython-version:
     description: 'The version of Jython to use'
     required: true
-    default: '2.7.2'
+    default: "2.7.2"
+    
+  installation-path:
+    description: 'The path where Jython will be installed'
+    required: false
+    default: "~/jython/"
 
 outputs:
   jython-download-url:
@@ -76,18 +81,20 @@ runs:
             # This is why I use the standard installation
             # java -jar /tmp/jython_installer.jar \
             #     --silent \
-            #     --directory ~/jython/ \
+            #     --directory ${{ inputs.installation-path }} \
             #     --type standalone;
 
             java -jar /tmp/jython_installer.jar \
                 --silent \
-                --directory ~/jython/ \
+                --directory ${{ inputs.installation-path }} \
                 --type standard;
     
     - name: Setup Jython alias
       shell: bash
       run: |
+        installation_path="$(sed -r 's/^\s+//; s/\s+$//; ' <<< "${{ inputs.installation-path }}")"
+
         mkdir -p ~/.local/bin;
-        echo 'java -jar ~/jython/jython.jar "$@"' >> ~/.local/bin/jython;
+        echo 'java -jar ${installation_path}/jython.jar "$@"' >> ~/.local/bin/jython;
         chmod +x ~/.local/bin/jython;
         echo ~/.local/bin >> $GITHUB_PATH

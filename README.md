@@ -5,6 +5,7 @@
 This action provides the following functionality for GitHub Actions users:
 
 - Installing a version of Jython and adding it to `PATH`
+- Customizing the installation path
 
 ## Basic usage
 
@@ -16,6 +17,7 @@ steps:
   uses: LukeSavefrogs/setup-jython@v1
   with:
     jython-version: '2.5.2'
+    installation-path: '~/jython/'   # Default
 
 - run: jython -c 'import sys, os; print(os.name, sys.version)';
 ```
