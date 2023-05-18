@@ -90,7 +90,8 @@ runs:
                 --type standard;
                 
             printf "Jython installed in the directory '%s'\n\n" "${{ inputs.installation-path }}"
-
+            ls -la ${{ inputs.installation-path }}
+            
     - name: Setup Jython alias
       shell: bash
       run: |
