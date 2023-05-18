@@ -39,5 +39,8 @@ jobs:
         jython-version: "${{ matrix.jython_version }}"
 
     - name: Run Jython
+      shell: bash
       run: |
-        jython -c 'import sys, os; print(os.name, sys.version)';
+        output="$(jython -c 'import sys, os; print(os.name, sys.version); print "\n\nJython Works!\n\n"')";
+        echo "$output";
+        echo "$output" | grep -q "Jython Works!";
