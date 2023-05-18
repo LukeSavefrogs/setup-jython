@@ -1,0 +1,45 @@
+name: "Jython tests"
+
+run-name: "Run Jython tests"
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  default_path:
+    name: "Keeping the default path"
+    runs-on: ubuntu-latest
+    defaults:
+        run:
+          shell: bash
+    steps:
+    - name: Install Jython
+      uses: LukeSavefrogs/setup-jython@v2
+      with:
+        jython-version: "2.2"
+
+    - name: Run Jython
+      shell: bash
+      run: |
+        [[ "$(which jython)" == "~/.local/bin/jython" ]] || exit 1
+        [[ -f "~/jython/jython.jar" ]] || exit 1
+
+  custom_path:
+    name: "Using a custom path"
+    runs-on: ubuntu-latest
+    defaults:
+        run:
+          shell: bash
+    steps:
+    - name: Install Jython
+      uses: LukeSavefrogs/setup-jython@v2
+      with:
+        jython-version: "2.2"
+        installation-path: "/tmp/jython-2.2"
+
+    - name: Run Jython
+      shell: bash
+      run: |
+        [[ "$(which jython)" == "~/.local/bin/jython" ]] || exit 1
+        [[ -f "/tmp/jython-2.2/jython.jar" ]] || exit 1
