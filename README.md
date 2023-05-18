@@ -13,7 +13,7 @@ steps:
 - uses: actions/checkout@v3
 
 - name: Install Jython
-  uses: actions/setup-jython@v1
+  uses: LukeSavefrogs/setup-jython@v1
   with:
     jython-version: '2.5.2'
 
