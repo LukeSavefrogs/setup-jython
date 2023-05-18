@@ -170,7 +170,7 @@ runs:
           #!/bin/bash
           java -classpath ${installation_path}/jython.jar org.python.util.jython -Dpython.home="${installation_path}" "\$@";
         EOF
-        elif [[ -f ${installation_path}/jython.jar ]];
+        elif [[ -f ${installation_path}/jython.jar ]]; then
         cat - <<EOF | sed -r 's/^\s*//' >> ~/.local/bin/jython && chmod +x ~/.local/bin/jython
           #!/bin/bash
           java -jar ${installation_path}/jython.jar -Dpython.home="${installation_path}" "\$@";
