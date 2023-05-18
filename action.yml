@@ -164,8 +164,8 @@ runs:
 
         mkdir -p ~/.local/bin;
 
-        java -cp ${installation_path}/jython.jar org.python.util.jython -c "print 'Works 1'" || true
-        java -cp ${installation_path}/jython.jar -c "print 'Works 2'" || true
+        cd "${installation_path}" && java -cp ${installation_path}/jython.jar org.python.util.jython -c "print 'Works 1'" || true
+        cd "${installation_path}" && java -cp ${installation_path}/jython.jar -c "print 'Works 2'" || true
         cd "${installation_path}" && java -Dpython.home="${installation_path}" -classpath ${installation_path}/jython.jar:${CLASSPATH:-.} org.python.util.jython -c "print 'Works 3'" || true
 
         # ------------------ Create 'jython' script ------------------
