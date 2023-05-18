@@ -29,7 +29,7 @@ runs:
     - name: Check version
       shell: bash
       if: ${{ contains(fromJSON('["2.0", "2.1"]'), inputs.jython-version) }}
-      run: "echo 'Class files not supported'"
+      run: "echo 'Class files not supported' && exit 99"
 
     - name: Determine Jython installer URL
       shell: bash
