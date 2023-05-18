@@ -19,3 +19,14 @@ steps:
 
 - run: jython -c 'import sys, os; print(os.name, sys.version)';
 ```
+
+## Supported versions
+
+This action supports all versions currently listed on the official repositories:
+
+- [SourceForge](https://sourceforge.net/projects/jython/files/jython/) (`2.0` - `2.5.2`)
+- [Maven](https://search.maven.org/artifact/org.python/jython-installer) (`2.5.3-rc1` - `2.7.3`)
+
+> **NOTE**
+>
+> As of `v1`, this action does not support Jython 2.0 and 2.1!
