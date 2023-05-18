@@ -11,33 +11,35 @@ jobs:
     name: "Keeping the default path"
     runs-on: ubuntu-latest
     defaults:
-        run:
-          shell: bash
+      run:
+        shell: bash
     steps:
-    - name: Install Jython
-      uses: LukeSavefrogs/setup-jython@main
-      with:
-        jython-version: "2.2"
+      - uses: actions/checkout@v3
+      - name: Install Jython
+        uses: ./
+        with:
+          jython-version: "2.2"
 
-    - name: Run Jython
-      shell: bash
-      run: |
-        [[ -f ~/jython/jython.jar ]] || exit 1
+      - name: Run Jython
+        shell: bash
+        run: |
+          [[ -f ~/jython/jython.jar ]] || exit 1
 
   custom_path:
     name: "Using a custom path"
     runs-on: ubuntu-latest
     defaults:
-        run:
-          shell: bash
+      run:
+        shell: bash
     steps:
-    - name: Install Jython
-      uses: LukeSavefrogs/setup-jython@main
-      with:
-        jython-version: "2.2"
-        installation-path: "/tmp/jython-2.2"
+      - uses: actions/checkout@v3
+      - name: Install Jython
+        uses: ./
+        with:
+          jython-version: "2.2"
+          installation-path: "/tmp/jython-2.2"
 
-    - name: Run Jython
-      shell: bash
-      run: |
-        [[ -f "/tmp/jython-2.2/jython.jar" ]] || exit 1
+      - name: Run Jython
+        shell: bash
+        run: |
+          [[ -f "/tmp/jython-2.2/jython.jar" ]] || exit 1

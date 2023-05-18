@@ -10,37 +10,38 @@ jobs:
   test:
     name: "Test action"
     strategy:
-        fail-fast: false
-        matrix:
-            os: 
-                - ubuntu-latest
-                - windows-latest
-                - macos-latest
-            jython_version: 
-                - "2.7.3"
-                - "2.7.2"
-                - "2.7.1"
-                - "2.7.0"
-                - "2.5.3"
-                - "2.5.2"
-                - "2.5.1"
-                - "2.5.0"
-                - "2.2.1"
-                - "2.2"
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+          - macos-latest
+        jython_version:
+          - "2.7.3"
+          - "2.7.2"
+          - "2.7.1"
+          - "2.7.0"
+          - "2.5.3"
+          - "2.5.2"
+          - "2.5.1"
+          - "2.5.0"
+          - "2.2.1"
+          - "2.2"
 
     runs-on: ${{ matrix.os }}
     defaults:
-        run:
-          shell: bash
+      run:
+        shell: bash
     steps:
-    - name: Install Jython ${{ matrix.jython_version }}
-      uses: LukeSavefrogs/setup-jython@main
-      with:
-        jython-version: "${{ matrix.jython_version }}"
+      - uses: actions/checkout@v3
+      - name: Install Jython ${{ matrix.jython_version }}
+        uses: ./
+        with:
+          jython-version: "${{ matrix.jython_version }}"
 
-    - name: Run Jython
-      shell: bash
-      run: |
-        output="$(jython -c 'import sys, os; print(os.name, sys.version); print "\n\nJython Works!\n\n"')";
-        echo "$output";
-        echo "$output" | grep -q "Jython Works!";
+      - name: Run Jython
+        shell: bash
+        run: |
+          output="$(jython -c 'import sys, os; print(os.name, sys.version); print "\n\nJython Works!\n\n"')";
+          echo "$output";
+          echo "$output" | grep -q "Jython Works!";
