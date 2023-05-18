@@ -165,21 +165,33 @@ runs:
         mkdir -p ~/.local/bin;
 
         # ------------------ Create 'jython' script ------------------
-        if [[ -d "${installation_path}/org" ]]; then
+        # ---> CLASS file
+        if [[ "${{ steps.get_download_url.outputs.installer_type }}" == "class" ]]; then
+          echo "::notice::Class file"
+
+          if [[ ! -d "${installation_path}/org" ]]; then
+            echo "::error::Org folder was not found."
+            exit 1;
+          fi
+        
         cat - <<EOF | sed -r 's/^\s*//' >> ~/.local/bin/jython && chmod +x ~/.local/bin/jython
           #!/bin/bash
-          java -classpath "${installation_path}/jython.jar:${installation_path}:${CLASSPATH:-.}" org.python.util.jython -Dpython.home="${installation_path}" "\$@";
+          java -Dpython.home="${installation_path}" -classpath "${installation_path}/jython.jar:${CLASSPATH:-.}" "org.python.util.jython" "\$@";
         EOF
         
-        elif [[ -f ${installation_path}/jython.jar ]]; then
+        # ---> JAR file
+        else
+          echo "::notice::JAR file"
+          
+          if [[ ! -f ${installation_path}/jython.jar ]]; then
+            echo "::error::File 'jython.jar' not found"
+            exit 1
+          fi
+        
         cat - <<EOF | sed -r 's/^\s*//' >> ~/.local/bin/jython && chmod +x ~/.local/bin/jython
           #!/bin/bash
           java -jar ${installation_path}/jython.jar -Dpython.home="${installation_path}" "\$@";
         EOF
-        
-        else
-          printf "ERROR: Cannot create 'jython' script.\n\n";
-          exit 1
         fi
 
         # ------------------ Create 'jythonc' script ------------------
