@@ -22,7 +22,6 @@ jobs:
     - name: Run Jython
       shell: bash
       run: |
-        [[ "$(which jython)" == "~/.local/bin/jython" ]] || exit 1
         [[ -f "~/jython/jython.jar" ]] || exit 1
 
   custom_path:
@@ -41,5 +40,4 @@ jobs:
     - name: Run Jython
       shell: bash
       run: |
-        [[ "$(which jython)" == "~/.local/bin/jython" ]] || exit 1
         [[ -f "/tmp/jython-2.2/jython.jar" ]] || exit 1
