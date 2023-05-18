@@ -170,11 +170,13 @@ runs:
           #!/bin/bash
           java -classpath ${installation_path}/jython.jar org.python.util.jython -Dpython.home="${installation_path}" "\$@";
         EOF
+        
         elif [[ -f ${installation_path}/jython.jar ]]; then
         cat - <<EOF | sed -r 's/^\s*//' >> ~/.local/bin/jython && chmod +x ~/.local/bin/jython
           #!/bin/bash
           java -jar ${installation_path}/jython.jar -Dpython.home="${installation_path}" "\$@";
         EOF
+        
         else
           printf "ERROR: Cannot create 'jython' script.\n\n";
           exit 1
@@ -184,13 +186,17 @@ runs:
         # (https://www.jython.org/jython-old-sites/archive/22/jythonc.html)
         if [[ -f ${installation_path}/jythonc ]]; then
           ln -snf ${installation_path}/jythonc ~/.local/bin/jythonc;
+        
         elif [[ -f ${installation_path}/Tools/jythonc/jythonc.py ]]; then
         cat - <<EOF | sed -r 's/^\s*//' >> ~/.local/bin/jythonc && chmod +x ~/.local/bin/jythonc
           #!/bin/bash
           ~/.local/bin/jython "${installation_path}/Tools/jythonc/jythonc.py" "\$@";
         EOF
+        
         else 
           printf "WARNING: Cannot create 'jythonc' script (did not find 'jythonc' or 'jythonc.py').\n\n";
         fi
 
+        cat ~/.local/bin/jython
+        
         echo ~/.local/bin >> $GITHUB_PATH
