@@ -1,7 +1,5 @@
 # setup-jython
 
-[![Jython tests](https://github.com/LukeSavefrogs/setup-jython/actions/workflows/test-action.yml/badge.svg)](https://github.com/LukeSavefrogs/setup-jython/actions/workflows/test-action.yml)
-
 This action provides the following functionality for GitHub Actions users:
 
 - Installing a version of Jython and adding it to `PATH`
