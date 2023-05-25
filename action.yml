@@ -1,6 +1,10 @@
 name: 'Setup Jython'
 description: 'Installs Jython using the provided version'
 
+branding:
+  icon: 'package'
+  color: 'green'
+
 inputs:
   jython-version:
     description: 'The version of Jython to use'
