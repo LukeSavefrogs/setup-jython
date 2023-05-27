@@ -35,7 +35,7 @@ runs:
       shell: python
       run: |
         import sys, os
-        import json, pathlib
+        import json
 
         print(sys.version)
 
