@@ -37,6 +37,8 @@ runs:
         import sys, os
         import json, pathlib
 
+        print(sys.version)
+
         with open("./bin/resources.json", "r") as f:
           json_content = json.load(f)
         
