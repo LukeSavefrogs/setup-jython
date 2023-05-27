@@ -30,14 +30,13 @@ runs:
         fetch-depth: 0
         path: ./setup-jython
 
+    # Sadly, macos-latest images use Python 2.7 (dunno why)
     - name: Find Jython installer from resource list
       id: find_installer
       shell: python
       run: |
         import sys, os
         import json
-
-        print(sys.version)
 
         with open("./bin/resources.json", "r") as f:
           json_content = json.load(f)
@@ -55,7 +54,8 @@ runs:
           sys.exit(1)
         
         with open(os.getenv("GITHUB_OUTPUT"), "a+") as f:
-          file_extension = os.path.splitext(matching_versions[0]["resource_urls"]["official"])[1].removeprefix(".")
+          file_extension = os.path.splitext(matching_versions[0]["resource_urls"]["official"])[1]
+          file_extension = file_extension[1:] if file_extension.startswith(".") else file_extension
           lines = [
             "details='" + json.dumps(matching_versions[0]) + "'\n",
             "url=" + matching_versions[0]['resource_urls']['official'] + "\n",
