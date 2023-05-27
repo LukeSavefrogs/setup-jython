@@ -55,15 +55,16 @@ runs:
           sys.exit(1)
         
         with open(os.getenv("GITHUB_OUTPUT"), "a+") as f:
-          f.write(f"details='{json.dumps(matching_versions[0])}'\n")
-          f.write(f"url={matching_versions[0]['resource_urls']['official']}\n")
-          f.write(f"version={matching_versions[0]['version']}\n")
-          f.write(f"modified_on={matching_versions[0]['modified_on']}\n")
-          
           file_extension = pathlib.Path(matching_versions[0]["resource_urls"]["official"]).suffix.removeprefix(".")
-
-          f.write(f"file_type={file_extension}\n")
-          f.write(f"file_name=jython_installer.{file_extension if file_extension else '.jar'}\n")
+          lines = [
+            "details='" + json.dumps(matching_versions[0]) + "'\n",
+            "url=" + matching_versions[0]['resource_urls']['official'] + "\n",
+            "version=" + matching_versions[0]['version'] + "\n",
+            "modified_on=" + matching_versions[0]['modified_on'] + "\n",
+            "file_type=" + file_extension,
+            "file_name=jython_installer." + (file_extension if file_extension else ".jar")
+          ]
+          f.write('\n'.join(lines))
 
     - name: Set up JDK 8
       uses: actions/setup-java@v3
