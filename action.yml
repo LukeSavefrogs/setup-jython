@@ -55,7 +55,7 @@ runs:
           sys.exit(1)
         
         with open(os.getenv("GITHUB_OUTPUT"), "a+") as f:
-          file_extension = pathlib.Path(matching_versions[0]["resource_urls"]["official"]).suffix.removeprefix(".")
+          file_extension = os.path.splitext(matching_versions[0]["resource_urls"]["official"]).removeprefix(".")
           lines = [
             "details='" + json.dumps(matching_versions[0]) + "'\n",
             "url=" + matching_versions[0]['resource_urls']['official'] + "\n",
