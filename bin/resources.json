@@ -5,7 +5,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.0/jython-20.class",
             "mirrored": null
         },
-        "modified_on": "2001-01-18"
+        "modified_on": "2001-01-18",
+		"available": false
     },
     {
         "version": "2.1",
@@ -13,7 +14,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.1/jython-21.class",
             "mirrored": null
         },
-        "modified_on": "2002-09-25"
+        "modified_on": "2002-09-25",
+		"available": false
     },
     {
         "version": "2.2a1",
@@ -21,7 +23,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.2a1/jython_Release_2_2alpha1.jar",
             "mirrored": null
         },
-        "modified_on": "2005-07-18"
+        "modified_on": "2005-07-18",
+		"available": true
     },
     {
         "version": "2.2b1",
@@ -29,7 +32,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.2b1/jython_installer-2.2b1.jar",
             "mirrored": null
         },
-        "modified_on": "2007-02-09"
+        "modified_on": "2007-02-09",
+		"available": true
     },
     {
         "version": "2.2b2",
@@ -37,7 +41,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.2b2/jython_installer-2.2b2.jar",
             "mirrored": null
         },
-        "modified_on": "2007-05-11"
+        "modified_on": "2007-05-11",
+		"available": true
     },
     {
         "version": "2.2rc1",
@@ -45,7 +50,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.2rc1/jython_installer-2.2rc1.jar",
             "mirrored": null
         },
-        "modified_on": "2007-06-23"
+        "modified_on": "2007-06-23",
+		"available": true
     },
     {
         "version": "2.2rc2",
@@ -53,7 +59,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.2rc2/jython_installer-2.2rc2.jar",
             "mirrored": null
         },
-        "modified_on": "2007-07-10"
+        "modified_on": "2007-07-10",
+		"available": true
     },
     {
         "version": "2.2rc3",
@@ -61,7 +68,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.2rc3/jython_installer-2.2rc3.jar",
             "mirrored": null
         },
-        "modified_on": "2007-08-02"
+        "modified_on": "2007-08-02",
+		"available": true
     },
     {
         "version": "2.2",
@@ -69,7 +77,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.2/jython_installer-2.2.jar",
             "mirrored": null
         },
-        "modified_on": "2007-08-22"
+        "modified_on": "2007-08-22",
+		"available": true
     },
     {
         "version": "2.2.1rc1",
@@ -77,7 +86,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.2.1rc1/jython_installer-2.2.1rc1.jar",
             "mirrored": null
         },
-        "modified_on": "2007-09-24"
+        "modified_on": "2007-09-24",
+		"available": true
     },
     {
         "version": "2.2.1rc2",
@@ -85,7 +95,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.2.1rc2/jython_installer-2.2.1rc2.jar",
             "mirrored": null
         },
-        "modified_on": "2007-10-05"
+        "modified_on": "2007-10-05",
+		"available": true
     },
     {
         "version": "2.2.1",
@@ -93,7 +104,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.2.1/jython_installer-2.2.1.jar",
             "mirrored": null
         },
-        "modified_on": "2007-10-13"
+        "modified_on": "2007-10-13",
+		"available": true
     },
     {
         "version": "2.5a1",
@@ -101,7 +113,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5a1/jython_installer-2.5a1.jar",
             "mirrored": null
         },
-        "modified_on": "2008-07-15"
+        "modified_on": "2008-07-15",
+		"available": true
     },
     {
         "version": "2.5a2",
@@ -109,7 +122,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5a2/jython_installer-2.5a2.jar",
             "mirrored": null
         },
-        "modified_on": "2008-09-06"
+        "modified_on": "2008-09-06",
+		"available": true
     },
     {
         "version": "2.5a3",
@@ -117,7 +131,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5a3/jython_installer-2.5a3.jar",
             "mirrored": null
         },
-        "modified_on": "2008-09-11"
+        "modified_on": "2008-09-11",
+		"available": true
     },
     {
         "version": "2.5b0",
@@ -125,7 +140,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5b0/jython_installer-2.5b0.jar",
             "mirrored": null
         },
-        "modified_on": "2008-10-31"
+        "modified_on": "2008-10-31",
+		"available": true
     },
     {
         "version": "2.5b1",
@@ -133,7 +149,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5b1/jython_installer-2.5b1.jar",
             "mirrored": null
         },
-        "modified_on": "2009-01-09"
+        "modified_on": "2009-01-09",
+		"available": true
     },
     {
         "version": "2.5b2",
@@ -141,7 +158,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5b2/jython_installer-2.5b2.jar",
             "mirrored": null
         },
-        "modified_on": "2009-03-07"
+        "modified_on": "2009-03-07",
+		"available": true
     },
     {
         "version": "2.5b3",
@@ -149,7 +167,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5b3/jython_installer-2.5b3.jar",
             "mirrored": null
         },
-        "modified_on": "2009-03-10"
+        "modified_on": "2009-03-10",
+		"available": true
     },
     {
         "version": "2.5b4",
@@ -157,7 +176,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5b4/jython_installer-2.5b4.jar",
             "mirrored": null
         },
-        "modified_on": "2009-04-28"
+        "modified_on": "2009-04-28",
+		"available": true
     },
     {
         "version": "2.5rc1",
@@ -165,7 +185,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5rc1/jython_installer-2.5rc1.jar",
             "mirrored": null
         },
-        "modified_on": "2009-05-11"
+        "modified_on": "2009-05-11",
+		"available": true
     },
     {
         "version": "2.5rc2",
@@ -173,7 +194,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5rc2/jython_installer-2.5rc2.jar",
             "mirrored": null
         },
-        "modified_on": "2009-05-11"
+        "modified_on": "2009-05-11",
+		"available": true
     },
     {
         "version": "2.5rc3",
@@ -181,7 +203,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5rc3/jython_installer-2.5rc3.jar",
             "mirrored": null
         },
-        "modified_on": "2009-05-26"
+        "modified_on": "2009-05-26",
+		"available": true
     },
     {
         "version": "2.5rc4",
@@ -189,7 +212,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5rc4/jython_installer-2.5rc4.jar",
             "mirrored": null
         },
-        "modified_on": "2009-06-08"
+        "modified_on": "2009-06-08",
+		"available": true
     },
     {
         "version": "2.5.0",
@@ -197,7 +221,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.5.0/jython_installer-2.5.0.jar",
             "mirrored": null
         },
-        "modified_on": "2009-06-16"
+        "modified_on": "2009-06-16",
+		"available": true
     },
     {
         "version": "2.5.1rc1",
@@ -205,7 +230,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5.1rc1/jython_installer-2.5.1rc1.jar",
             "mirrored": null
         },
-        "modified_on": "2009-09-01"
+        "modified_on": "2009-09-01",
+		"available": true
     },
     {
         "version": "2.5.1rc2",
@@ -213,7 +239,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5.1rc2/jython_installer-2.5.1rc2.jar",
             "mirrored": null
         },
-        "modified_on": "2009-09-12"
+        "modified_on": "2009-09-12",
+		"available": true
     },
     {
         "version": "2.5.1rc3",
@@ -221,7 +248,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5.1rc3/jython_installer-2.5.1rc3.jar",
             "mirrored": null
         },
-        "modified_on": "2009-09-24"
+        "modified_on": "2009-09-24",
+		"available": true
     },
     {
         "version": "2.5.1",
@@ -229,7 +257,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.5.1/jython_installer-2.5.1.jar",
             "mirrored": null
         },
-        "modified_on": "2009-09-26"
+        "modified_on": "2009-09-26",
+		"available": true
     },
     {
         "version": "2.5.2b1",
@@ -237,7 +266,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5.2b1/jython_installer-2.5.2b1.jar",
             "mirrored": null
         },
-        "modified_on": "2010-06-28"
+        "modified_on": "2010-06-28",
+		"available": true
     },
     {
         "version": "2.5.2b2",
@@ -245,7 +275,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5.2b2/jython_installer-2.5.2b2.jar",
             "mirrored": null
         },
-        "modified_on": "2010-09-14"
+        "modified_on": "2010-09-14",
+		"available": true
     },
     {
         "version": "2.5.2rc1",
@@ -253,7 +284,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5.2rc1/jython_installer-2.5.2rc1.jar",
             "mirrored": null
         },
-        "modified_on": "2010-10-17"
+        "modified_on": "2010-10-17",
+		"available": true
     },
     {
         "version": "2.5.2rc2",
@@ -261,7 +293,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5.2rc2/jython_installer-2.5.2rc2.jar",
             "mirrored": null
         },
-        "modified_on": "2010-10-24"
+        "modified_on": "2010-10-24",
+		"available": true
     },
     {
         "version": "2.5.2rc3",
@@ -269,7 +302,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5.2rc3/jython_installer-2.5.2rc3.jar",
             "mirrored": null
         },
-        "modified_on": "2011-01-10"
+        "modified_on": "2011-01-10",
+		"available": true
     },
     {
         "version": "2.5.2rc4",
@@ -277,7 +311,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5.2rc4/jython_installer-2.5.2rc4.jar",
             "mirrored": null
         },
-        "modified_on": "2011-02-14"
+        "modified_on": "2011-02-14",
+		"available": true
     },
     {
         "version": "2.5.2",
@@ -285,7 +320,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython/2.5.2/jython_installer-2.5.2.jar",
             "mirrored": null
         },
-        "modified_on": "2011-03-03"
+        "modified_on": "2011-03-03",
+		"available": true
     },
     {
         "version": "2.5.3b1",
@@ -293,7 +329,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5.3b1/jython_installer-2.5.3b1.jar",
             "mirrored": null
         },
-        "modified_on": "2012-02-22"
+        "modified_on": "2012-02-22",
+		"available": true
     },
     {
         "version": "2.7.0a1",
@@ -301,7 +338,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.7.0a1/jython_installer-2.7a1.jar",
             "mirrored": null
         },
-        "modified_on": "2012-05-17"
+        "modified_on": "2012-05-17",
+		"available": true
     },
     {
         "version": "2.7.0a2",
@@ -309,7 +347,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.7.0a2/jython_installer-2.7a2.jar",
             "mirrored": null
         },
-        "modified_on": "2012-05-25"
+        "modified_on": "2012-05-25",
+		"available": true
     },
     {
         "version": "2.5.3b3",
@@ -317,7 +356,8 @@
             "official": "https://downloads.sourceforge.net/project/jython/jython-dev/2.5.3b3/jython_installer-2.5.3b3.jar",
             "mirrored": null
         },
-        "modified_on": "2012-07-05"
+        "modified_on": "2012-07-05",
+		"available": true
     },
     {
         "version": "2.5.3-rc1",
@@ -325,7 +365,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.5.3-rc1/jython-installer-2.5.3-rc1.jar",
             "mirrored": null
         },
-        "modified_on": "2012-08-07"
+        "modified_on": "2012-08-07",
+		"available": true
     },
     {
         "version": "2.5.3",
@@ -333,7 +374,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.5.3/jython-installer-2.5.3.jar",
             "mirrored": null
         },
-        "modified_on": "2012-08-13"
+        "modified_on": "2012-08-13",
+		"available": true
     },
     {
         "version": "2.5.4-rc1",
@@ -341,7 +383,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.5.4-rc1/jython-installer-2.5.4-rc1.jar",
             "mirrored": null
         },
-        "modified_on": "2013-02-08"
+        "modified_on": "2013-02-08",
+		"available": true
     },
     {
         "version": "2.7-b1",
@@ -349,7 +392,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7-b1/jython-installer-2.7-b1.jar",
             "mirrored": null
         },
-        "modified_on": "2013-02-09"
+        "modified_on": "2013-02-09",
+		"available": true
     },
     {
         "version": "2.7-b2",
@@ -357,7 +401,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7-b2/jython-installer-2.7-b2.jar",
             "mirrored": null
         },
-        "modified_on": "2014-04-23"
+        "modified_on": "2014-04-23",
+		"available": true
     },
     {
         "version": "2.7-b3",
@@ -365,7 +410,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7-b3/jython-installer-2.7-b3.jar",
             "mirrored": null
         },
-        "modified_on": "2014-08-04"
+        "modified_on": "2014-08-04",
+		"available": true
     },
     {
         "version": "2.7-b4",
@@ -373,7 +419,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7-b4/jython-installer-2.7-b4.jar",
             "mirrored": null
         },
-        "modified_on": "2015-02-13"
+        "modified_on": "2015-02-13",
+		"available": true
     },
     {
         "version": "2.7-rc1",
@@ -381,7 +428,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7-rc1/jython-installer-2.7-rc1.jar",
             "mirrored": null
         },
-        "modified_on": "2015-03-25"
+        "modified_on": "2015-03-25",
+		"available": true
     },
     {
         "version": "2.7-rc2",
@@ -389,7 +437,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7-rc2/jython-installer-2.7-rc2.jar",
             "mirrored": null
         },
-        "modified_on": "2015-04-03"
+        "modified_on": "2015-04-03",
+		"available": true
     },
     {
         "version": "2.7-rc3",
@@ -397,7 +446,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7-rc3/jython-installer-2.7-rc3.jar",
             "mirrored": null
         },
-        "modified_on": "2015-04-21"
+        "modified_on": "2015-04-21",
+		"available": true
     },
     {
         "version": "2.7.0",
@@ -405,7 +455,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.0/jython-installer-2.7.0.jar",
             "mirrored": null
         },
-        "modified_on": "2015-04-29"
+        "modified_on": "2015-04-29",
+		"available": true
     },
     {
         "version": "2.7.1b1",
@@ -413,7 +464,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.1b1/jython-installer-2.7.1b1.jar",
             "mirrored": null
         },
-        "modified_on": "2015-09-11"
+        "modified_on": "2015-09-11",
+		"available": true
     },
     {
         "version": "2.7.1b2",
@@ -421,7 +473,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.1b2/jython-installer-2.7.1b2.jar",
             "mirrored": null
         },
-        "modified_on": "2015-10-12"
+        "modified_on": "2015-10-12",
+		"available": true
     },
     {
         "version": "2.7.1b3",
@@ -429,7 +482,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.1b3/jython-installer-2.7.1b3.jar",
             "mirrored": null
         },
-        "modified_on": "2016-02-03"
+        "modified_on": "2016-02-03",
+		"available": true
     },
     {
         "version": "2.7.1-rc2",
@@ -437,7 +491,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.1-rc2/jython-installer-2.7.1-rc2.jar",
             "mirrored": null
         },
-        "modified_on": "2017-05-29"
+        "modified_on": "2017-05-29",
+		"available": true
     },
     {
         "version": "2.7.1-rc3",
@@ -445,7 +500,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.1-rc3/jython-installer-2.7.1-rc3.jar",
             "mirrored": null
         },
-        "modified_on": "2017-06-17"
+        "modified_on": "2017-06-17",
+		"available": true
     },
     {
         "version": "2.7.1",
@@ -453,7 +509,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.1/jython-installer-2.7.1.jar",
             "mirrored": null
         },
-        "modified_on": "2017-06-30"
+        "modified_on": "2017-06-30",
+		"available": true
     },
     {
         "version": "2.7.2b2",
@@ -461,7 +518,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.2b2/jython-installer-2.7.2b2.jar",
             "mirrored": null
         },
-        "modified_on": "2019-11-01"
+        "modified_on": "2019-11-01",
+		"available": true
     },
     {
         "version": "2.7.2b3",
@@ -469,7 +527,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.2b3/jython-installer-2.7.2b3.jar",
             "mirrored": null
         },
-        "modified_on": "2020-02-02"
+        "modified_on": "2020-02-02",
+		"available": true
     },
     {
         "version": "2.7.2rc1",
@@ -477,7 +536,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.2rc1/jython-installer-2.7.2rc1.jar",
             "mirrored": null
         },
-        "modified_on": "2020-03-01"
+        "modified_on": "2020-03-01",
+		"available": true
     },
     {
         "version": "2.7.2",
@@ -485,7 +545,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.2/jython-installer-2.7.2.jar",
             "mirrored": null
         },
-        "modified_on": "2020-03-21"
+        "modified_on": "2020-03-21",
+		"available": true
     },
     {
         "version": "2.7.3b1",
@@ -493,7 +554,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.3b1/jython-installer-2.7.3b1.jar",
             "mirrored": null
         },
-        "modified_on": "2022-07-09"
+        "modified_on": "2022-07-09",
+		"available": true
     },
     {
         "version": "2.7.3rc1",
@@ -501,7 +563,8 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.3rc1/jython-installer-2.7.3rc1.jar",
             "mirrored": null
         },
-        "modified_on": "2022-08-28"
+        "modified_on": "2022-08-28",
+		"available": true
     },
     {
         "version": "2.7.3",
@@ -509,6 +572,7 @@
             "official": "https://repo1.maven.org/maven2/org/python/jython-installer/2.7.3/jython-installer-2.7.3.jar",
             "mirrored": null
         },
-        "modified_on": "2022-09-11"
+        "modified_on": "2022-09-11",
+		"available": true
     }
 ]
