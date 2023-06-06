@@ -29,6 +29,10 @@ runs:
       with:
         fetch-depth: 0
         path: ./setup-jython
+    
+    - run: |
+        echo "::notice::Action running on ${{ runner.os }} ${{ runner.arch }} (name: '${{ runner.name }}')"
+      shell: bash
 
     # Sadly, macos-latest images use Python 2.7 (dunno why)
     - name: Find Jython installer from resource list
