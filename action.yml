@@ -51,7 +51,7 @@ runs:
           print("::error title=No matching versions found::No versions were found that matched the string '${{ inputs.jython-version }}'")
           sys.exit(1)
         
-        print("::notice::Found {} versions matching the input string".format(len(matching_versions)))
+        print("Found {} versions matching the input string".format(len(matching_versions)))
         
         if len(matching_versions) > 1:
           print("::error title=Too many versions found::Too many versions were found ({}) that matched the string '${{ inputs.jython-version }}'".format(len(matching_versions)))
