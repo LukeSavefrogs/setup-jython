@@ -47,10 +47,14 @@ runs:
           print("::error title=No matching versions found::No versions were found that matched the string '${{ inputs.jython-version }}'")
           sys.exit(1)
         
-        print("Found {} versions matching the input string".format(len(matching_versions)))
+        print("::notice::Found {} versions matching the input string".format(len(matching_versions)))
         
         if len(matching_versions) > 1:
           print("::error title=Too many versions found::Too many versions were found ({}) that matched the string '${{ inputs.jython-version }}'".format(len(matching_versions)))
+          sys.exit(1)
+        
+        if not matching_versions[0]['available']:
+          print("::error title=Version not available::The specified version (${{ inputs.jython-version }}) is currently not available for download.")
           sys.exit(1)
         
         with open(os.getenv("GITHUB_OUTPUT"), "a+") as f:
