@@ -37,7 +37,7 @@ jobs:
         shell: bash
     steps:
     - name: Install Jython
-      uses: LukeSavefrogs/setup-jython@main
+      uses: ./
       with:
         jython-version: "2.2"
         installation-path: "/tmp/jython-2.2"
