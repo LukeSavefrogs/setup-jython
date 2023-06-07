@@ -9,7 +9,6 @@ inputs:
   jython-version:
     description: 'The version of Jython to use'
     required: true
-    default: "2.7.2"
 
   installation-path:
     description: 'The path where Jython will be installed'
