@@ -36,6 +36,11 @@ jobs:
       run:
         shell: bash
     steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        
     - name: Install Jython
       uses: ./
       with:
