@@ -6,7 +6,7 @@ on:
 
 jobs:
   check-urls:
-    name: "Check the status of source URLs"
+    name: "Check download URLs status"
     runs-on: ubuntu-latest
     defaults:
       run:
