@@ -8,7 +8,7 @@ on:
 
 jobs:
   default_path:
-    name: "Keeping the default path"
+    name: "Default path"
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -30,7 +30,7 @@ jobs:
         [[ -f ~/jython/jython.jar ]] || exit 1
 
   custom_path:
-    name: "Using a custom path"
+    name: "Custom path"
     runs-on: ubuntu-latest
     defaults:
       run:
