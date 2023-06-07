@@ -57,7 +57,13 @@ runs:
           print("::error title=Too many versions found::Too many versions were found ({}) that matched the string '${{ inputs.jython-version }}'".format(len(matching_versions)))
           sys.exit(1)
         
-        if not matching_versions[0]['available']:
+        current_runner_os = "${{ runner.os }}-${{ runner.arch }}"
+        if type(matching_versions[0]['available']) == list and current_runner_os.lower() not in [s.lower() for s in matching_versions[0]['available']]:
+          print("::warning title=Version not available for current runner::Runner '{}' not supported".format(current_runner_os))
+          print("::error title=Version not available for current runner::The specified version (${{ inputs.jython-version }}) is currently available only for the following runners: {}.".format(', '.join(matching_versions[0]['available'])))
+          sys.exit(1)
+
+        elif not matching_versions[0]['available']:
           print("::error title=Version not available::The specified version (${{ inputs.jython-version }}) is currently not available for download.")
           sys.exit(1)
         
