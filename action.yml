@@ -1,5 +1,6 @@
 name: 'Setup Jython'
-description: 'Installs Jython using the provided version'
+description: 'Set up a specific version of Jython and add the command-line tools to the PATH.'
+author: 'Luca Salvarani'
 
 branding:
   icon: 'package'
