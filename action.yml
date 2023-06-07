@@ -17,9 +17,9 @@ inputs:
     default: "~/jython/"
 
 outputs:
-  jython-download-url:
-    description: "Random number"
-    value: ${{ steps.jython_installer_url.outputs.download_url }}
+  download-url:
+    description: "The URL from which the installer is downloaded"
+    value: ${{ steps.find_installer.outputs.url }}
 
 runs:
   using: "composite"
@@ -100,6 +100,7 @@ runs:
         echo "temporary_file=${output_file}" >> "$GITHUB_OUTPUT"
     
     - name: Install Jython
+      id: installation
       shell: bash
       run: |
             case "${{ steps.find_installer.outputs.file_type }}" in
