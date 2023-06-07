@@ -31,7 +31,7 @@ runs:
         path: ./setup-jython
     
     - run: |
-        echo "::notice::Action running on ${{ runner.os }} ${{ runner.arch }} (name: '${{ runner.name }}')"
+        echo "Action running on ${{ runner.os }} ${{ runner.arch }} (name: '${{ runner.name }}')"
       shell: bash
 
     # Sadly, macos-latest images use Python 2.7 (dunno why)
