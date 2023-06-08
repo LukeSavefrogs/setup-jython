@@ -6,7 +6,7 @@
             "mirrored": null
         },
         "modified_on": "2001-01-18",
-		"available": ["Windows-x64"]
+        "available": ["Windows-x64"]
     },
     {
         "version": "2.1",
@@ -15,7 +15,7 @@
             "mirrored": null
         },
         "modified_on": "2002-09-25",
-		"available": ["Windows-x64"]
+        "available": ["Windows-x64"]
     },
     {
         "version": "2.2a1",
@@ -24,7 +24,7 @@
             "mirrored": null
         },
         "modified_on": "2005-07-18",
-		"available": true
+        "available": true
     },
     {
         "version": "2.2b1",
@@ -33,7 +33,7 @@
             "mirrored": null
         },
         "modified_on": "2007-02-09",
-		"available": true
+        "available": true
     },
     {
         "version": "2.2b2",
@@ -42,7 +42,7 @@
             "mirrored": null
         },
         "modified_on": "2007-05-11",
-		"available": true
+        "available": true
     },
     {
         "version": "2.2rc1",
@@ -51,7 +51,7 @@
             "mirrored": null
         },
         "modified_on": "2007-06-23",
-		"available": true
+        "available": true
     },
     {
         "version": "2.2rc2",
@@ -60,7 +60,7 @@
             "mirrored": null
         },
         "modified_on": "2007-07-10",
-		"available": true
+        "available": true
     },
     {
         "version": "2.2rc3",
@@ -69,7 +69,7 @@
             "mirrored": null
         },
         "modified_on": "2007-08-02",
-		"available": true
+        "available": true
     },
     {
         "version": "2.2",
@@ -78,7 +78,7 @@
             "mirrored": null
         },
         "modified_on": "2007-08-22",
-		"available": true
+        "available": true
     },
     {
         "version": "2.2.1rc1",
@@ -87,7 +87,7 @@
             "mirrored": null
         },
         "modified_on": "2007-09-24",
-		"available": true
+        "available": true
     },
     {
         "version": "2.2.1rc2",
@@ -96,7 +96,7 @@
             "mirrored": null
         },
         "modified_on": "2007-10-05",
-		"available": true
+        "available": true
     },
     {
         "version": "2.2.1",
@@ -105,7 +105,7 @@
             "mirrored": null
         },
         "modified_on": "2007-10-13",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5a1",
@@ -114,7 +114,7 @@
             "mirrored": null
         },
         "modified_on": "2008-07-15",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5a2",
@@ -123,7 +123,7 @@
             "mirrored": null
         },
         "modified_on": "2008-09-06",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5a3",
@@ -132,7 +132,7 @@
             "mirrored": null
         },
         "modified_on": "2008-09-11",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5b0",
@@ -141,7 +141,7 @@
             "mirrored": null
         },
         "modified_on": "2008-10-31",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5b1",
@@ -150,7 +150,7 @@
             "mirrored": null
         },
         "modified_on": "2009-01-09",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5b2",
@@ -159,7 +159,7 @@
             "mirrored": null
         },
         "modified_on": "2009-03-07",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5b3",
@@ -168,7 +168,7 @@
             "mirrored": null
         },
         "modified_on": "2009-03-10",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5b4",
@@ -177,7 +177,7 @@
             "mirrored": null
         },
         "modified_on": "2009-04-28",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5rc1",
@@ -186,7 +186,7 @@
             "mirrored": null
         },
         "modified_on": "2009-05-11",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5rc2",
@@ -195,7 +195,7 @@
             "mirrored": null
         },
         "modified_on": "2009-05-11",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5rc3",
@@ -204,7 +204,7 @@
             "mirrored": null
         },
         "modified_on": "2009-05-26",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5rc4",
@@ -213,7 +213,7 @@
             "mirrored": null
         },
         "modified_on": "2009-06-08",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.0",
@@ -222,7 +222,7 @@
             "mirrored": null
         },
         "modified_on": "2009-06-16",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.1rc1",
@@ -231,7 +231,7 @@
             "mirrored": null
         },
         "modified_on": "2009-09-01",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.1rc2",
@@ -240,7 +240,7 @@
             "mirrored": null
         },
         "modified_on": "2009-09-12",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.1rc3",
@@ -249,7 +249,7 @@
             "mirrored": null
         },
         "modified_on": "2009-09-24",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.1",
@@ -258,7 +258,7 @@
             "mirrored": null
         },
         "modified_on": "2009-09-26",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.2b1",
@@ -267,7 +267,7 @@
             "mirrored": null
         },
         "modified_on": "2010-06-28",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.2b2",
@@ -276,7 +276,7 @@
             "mirrored": null
         },
         "modified_on": "2010-09-14",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.2rc1",
@@ -285,7 +285,7 @@
             "mirrored": null
         },
         "modified_on": "2010-10-17",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.2rc2",
@@ -294,7 +294,7 @@
             "mirrored": null
         },
         "modified_on": "2010-10-24",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.2rc3",
@@ -303,7 +303,7 @@
             "mirrored": null
         },
         "modified_on": "2011-01-10",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.2rc4",
@@ -312,7 +312,7 @@
             "mirrored": null
         },
         "modified_on": "2011-02-14",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.2",
@@ -321,7 +321,7 @@
             "mirrored": null
         },
         "modified_on": "2011-03-03",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.3b1",
@@ -330,7 +330,7 @@
             "mirrored": null
         },
         "modified_on": "2012-02-22",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.0a1",
@@ -339,7 +339,7 @@
             "mirrored": null
         },
         "modified_on": "2012-05-17",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.0a2",
@@ -348,7 +348,7 @@
             "mirrored": null
         },
         "modified_on": "2012-05-25",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.3b3",
@@ -357,7 +357,7 @@
             "mirrored": null
         },
         "modified_on": "2012-07-05",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.3-rc1",
@@ -366,7 +366,7 @@
             "mirrored": null
         },
         "modified_on": "2012-08-07",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.3",
@@ -375,7 +375,7 @@
             "mirrored": null
         },
         "modified_on": "2012-08-13",
-		"available": true
+        "available": true
     },
     {
         "version": "2.5.4-rc1",
@@ -384,7 +384,7 @@
             "mirrored": null
         },
         "modified_on": "2013-02-08",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7-b1",
@@ -393,7 +393,7 @@
             "mirrored": null
         },
         "modified_on": "2013-02-09",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7-b2",
@@ -402,7 +402,7 @@
             "mirrored": null
         },
         "modified_on": "2014-04-23",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7-b3",
@@ -411,7 +411,7 @@
             "mirrored": null
         },
         "modified_on": "2014-08-04",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7-b4",
@@ -420,7 +420,7 @@
             "mirrored": null
         },
         "modified_on": "2015-02-13",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7-rc1",
@@ -429,7 +429,7 @@
             "mirrored": null
         },
         "modified_on": "2015-03-25",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7-rc2",
@@ -438,7 +438,7 @@
             "mirrored": null
         },
         "modified_on": "2015-04-03",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7-rc3",
@@ -447,7 +447,7 @@
             "mirrored": null
         },
         "modified_on": "2015-04-21",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.0",
@@ -456,7 +456,7 @@
             "mirrored": null
         },
         "modified_on": "2015-04-29",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.1b1",
@@ -465,7 +465,7 @@
             "mirrored": null
         },
         "modified_on": "2015-09-11",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.1b2",
@@ -474,7 +474,7 @@
             "mirrored": null
         },
         "modified_on": "2015-10-12",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.1b3",
@@ -483,7 +483,7 @@
             "mirrored": null
         },
         "modified_on": "2016-02-03",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.1-rc2",
@@ -492,7 +492,7 @@
             "mirrored": null
         },
         "modified_on": "2017-05-29",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.1-rc3",
@@ -501,7 +501,7 @@
             "mirrored": null
         },
         "modified_on": "2017-06-17",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.1",
@@ -510,7 +510,7 @@
             "mirrored": null
         },
         "modified_on": "2017-06-30",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.2b2",
@@ -519,7 +519,7 @@
             "mirrored": null
         },
         "modified_on": "2019-11-01",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.2b3",
@@ -528,7 +528,7 @@
             "mirrored": null
         },
         "modified_on": "2020-02-02",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.2rc1",
@@ -537,7 +537,7 @@
             "mirrored": null
         },
         "modified_on": "2020-03-01",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.2",
@@ -546,7 +546,7 @@
             "mirrored": null
         },
         "modified_on": "2020-03-21",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.3b1",
@@ -555,7 +555,7 @@
             "mirrored": null
         },
         "modified_on": "2022-07-09",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.3rc1",
@@ -564,7 +564,7 @@
             "mirrored": null
         },
         "modified_on": "2022-08-28",
-		"available": true
+        "available": true
     },
     {
         "version": "2.7.3",
@@ -573,6 +573,6 @@
             "mirrored": null
         },
         "modified_on": "2022-09-11",
-		"available": true
+        "available": true
     }
 ]
