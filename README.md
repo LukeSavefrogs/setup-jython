@@ -15,7 +15,7 @@ steps:
 - uses: actions/checkout@v3
 
 - name: Install Jython
-  uses: LukeSavefrogs/setup-jython@v1
+  uses: LukeSavefrogs/setup-jython@v3
   with:
     jython-version: '2.5.2'
     installation-path: '~/jython/'   # Default
@@ -25,11 +25,14 @@ steps:
 
 ## Supported versions
 
-This action supports all versions currently listed on the official repositories:
+This action supports all versions (_both stable and development releases_) currently listed on the official repositories:
 
-- [SourceForge](https://sourceforge.net/projects/jython/files/jython/) (`2.0` - `2.5.2`)
+- [SourceForge - Stable](https://sourceforge.net/projects/jython/files/jython/) (`2.0` - `2.5.2`)
+- [SourceForge - Development](https://sourceforge.net/projects/jython/files/jython-dev/) (`2.5a1` - `2.7.0a2`)
 - [Maven](https://search.maven.org/artifact/org.python/jython-installer) (`2.5.3-rc1` - `2.7.3`)
 
-> **NOTE**
+> ⚠️ **WARNING** ⚠️
 >
-> As of `v1`, this action does not support Jython 2.0 and 2.1!
+> As of **`v3`**, Jython versions **2.0**/**2.1** **work only on `windows-*` runners**!
+>
+> See issue [#1](https://github.com/LukeSavefrogs/setup-jython/issues/1) for more info..
