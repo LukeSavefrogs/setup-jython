@@ -3,7 +3,7 @@
 [![Jython tests](https://github.com/LukeSavefrogs/setup-jython/actions/workflows/test-action.yml/badge.svg)](https://github.com/LukeSavefrogs/setup-jython/actions/workflows/test-action.yml)
 [![Source download URLs status](https://github.com/LukeSavefrogs/setup-jython/actions/workflows/test-urls.yml/badge.svg)](https://github.com/LukeSavefrogs/setup-jython/actions/workflows/test-urls.yml)
 
-This action provides the following functionality for GitHub Actions users:
+This action provides the following functionalities for GitHub Actions users:
 
 - Installing a version of Jython and adding it to `PATH`
 - Customizing the installation path
@@ -12,16 +12,57 @@ This action provides the following functionality for GitHub Actions users:
 
 ```yml
 steps:
-- uses: actions/checkout@v3
-
 - name: Install Jython
   uses: LukeSavefrogs/setup-jython@v3
   with:
     jython-version: '2.5.2'
-    installation-path: '~/jython/'   # Default
 
 - run: jython -c 'import sys, os; print(os.name, sys.version)';
 ```
+
+## Inputs
+
+### `jython-version`
+
+Specify the version of Jython to install. The value must be one of the versions listed in the [Supported versions](#supported-versions) section.
+
+<table>
+    <thead align=center>
+        <tr>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody align=center>
+        <tr>
+            <td>string</td>
+            <td>yes</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
+
+### `installation-path`
+
+Specify the path where Jython will be installed. Please note that this is usually not needed, since the binaries are always added to `PATH` anyway.
+
+<table>
+    <thead align=center>
+        <tr>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody align=center>
+        <tr>
+            <td>string</td>
+            <td>no</td>
+            <td><code>~/jython/</code></td>
+        </tr>
+    </tbody>
+</table>
 
 ## Supported versions
 
