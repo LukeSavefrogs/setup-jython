@@ -26,6 +26,8 @@ runs:
   steps:  
     - run: |
         echo "Action running on ${{ runner.os }} ${{ runner.arch }} (name: '${{ runner.name }}')"
+        ls -l "${{ github.action_path }}"
+        ls -l "${{ github.action_path }}/bin"
       shell: bash
 
     # Sadly, macos-latest images use Python 2.7 (dunno why)
@@ -36,7 +38,7 @@ runs:
         import sys, os
         import json
 
-        with open("${{github.action_path}}/bin/resources.json", "r") as f:
+        with open("${{ github.action_path }}bin/resources.json", "r") as f:
           json_content = json.load(f)
         
         matching_versions = list(filter(lambda el: el["version"] == "${{ inputs.jython-version }}".strip(), json_content))
