@@ -38,16 +38,7 @@ runs:
         import sys, os
         import json
 
-        json_file = r"${{ github.action_path }}bin/resources.json"
-        print("Reading '{}'".format(json_file))
-        print("Reading '{}'".format(str(json_file)))
-        try:
-          from pathlib import Path
-          json_file = str(Path(json_file).resolve())
-        except ImportError:
-          pass
-
-        with open(json_file, "r") as f:
+        with open(r"${{ github.action_path }}bin/resources.json", "r") as f:
           json_content = json.load(f)
         
         matching_versions = list(filter(lambda el: el["version"] == "${{ inputs.jython-version }}".strip(), json_content))
