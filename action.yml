@@ -37,7 +37,7 @@ runs:
         import sys, os
         import json
 
-        with open(r"${{ github.action_path }}bin/resources.json", "r") as f:
+        with open(r"${{ github.action_path }}/bin/resources.json", "r") as f:
           json_content = json.load(f)
         
         matching_versions = list(filter(lambda el: el["version"] == "${{ inputs.jython-version }}".strip(), json_content))
