@@ -38,7 +38,7 @@ runs:
         import sys, os
         import json
 
-        json_file = "${{ github.action_path }}bin/resources.json"
+        json_file = r"${{ github.action_path }}bin/resources.json"
         print("Reading '{}'".format(json_file))
         print("Reading '{}'".format(str(json_file)))
         try:
