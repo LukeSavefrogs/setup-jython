@@ -23,13 +23,7 @@ outputs:
 
 runs:
   using: "composite"
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-        path: ./setup-jython
-    
+  steps:  
     - run: |
         echo "Action running on ${{ runner.os }} ${{ runner.arch }} (name: '${{ runner.name }}')"
       shell: bash
@@ -42,7 +36,7 @@ runs:
         import sys, os
         import json
 
-        with open("./bin/resources.json", "r") as f:
+        with open("${{github.action_path}}/bin/resources.json", "r") as f:
           json_content = json.load(f)
         
         matching_versions = list(filter(lambda el: el["version"] == "${{ inputs.jython-version }}".strip(), json_content))
@@ -71,10 +65,10 @@ runs:
           file_extension = os.path.splitext(matching_versions[0]["resource_urls"]["official"])[1]
           file_extension = file_extension[1:] if file_extension.startswith(".") else file_extension
           lines = [
-            "details='" + json.dumps(matching_versions[0]) + "'\n",
-            "url=" + matching_versions[0]['resource_urls']['official'] + "\n",
-            "version=" + matching_versions[0]['version'] + "\n",
-            "modified_on=" + matching_versions[0]['modified_on'] + "\n",
+            "details='{}'".format(json.dumps(matching_versions[0])),
+            "url=" + matching_versions[0]['resource_urls']['official'],
+            "version=" + matching_versions[0]['version'],
+            "modified_on=" + matching_versions[0]['modified_on'],
             "file_type=" + file_extension,
             "file_name=jython_installer." + (file_extension if file_extension else ".jar")
           ]
