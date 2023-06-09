@@ -24,10 +24,9 @@ outputs:
 runs:
   using: "composite"
   steps:  
-    - run: |
+    - name: Print runner information
+      run: |
         echo "Action running on ${{ runner.os }} ${{ runner.arch }} (name: '${{ runner.name }}')"
-        ls -l "${{ github.action_path }}"
-        ls -l "${{ github.action_path }}/bin"
       shell: bash
 
     # Sadly, macos-latest images use Python 2.7 (dunno why)
