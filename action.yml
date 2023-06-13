@@ -155,7 +155,10 @@ runs:
         echo "$jython_cmd" >> ~/.local/bin/jython;
         
         chmod +x ~/.local/bin/jython;
-        echo ~/.local/bin >> $GITHUB_PATH
-        echo ${{ github.workspace }}/.local/bin >> $GITHUB_PATH
+        # echo ~/.local/bin >> $GITHUB_PATH
+        # echo ${{ github.workspace }}/.local/bin >> $GITHUB_PATH
 
-        cat $GITHUB_PATH
+    - name: Add to PATH
+      shell: ${{ runner.os == 'Windows' && 'pwsh' || 'bash' }}
+      run: |
+        echo ${HOME}/.local/bin >> $GITHUB_PATH
