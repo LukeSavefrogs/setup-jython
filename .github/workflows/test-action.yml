@@ -69,3 +69,9 @@ jobs:
         output="$(jython -c 'import sys, os; print(os.name, sys.version); print "\n\nJython Works!\n\n"')";
         echo "$output";
         echo "$output" | grep -q "Jython Works!";
+
+    - name: Run Jython
+      shell: pwsh
+      if: ${{ runner.os == 'Windows' }}
+      run: |
+        jython -c 'import sys, os; print(os.name, sys.version); print "\n\nJython Works!\n\n"'
