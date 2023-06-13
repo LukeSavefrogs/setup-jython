@@ -60,6 +60,9 @@ jobs:
       with:
         jython-version: "${{ matrix.jython_version }}"
 
+    - name: Environment check
+      run: env
+      
     - name: Run Jython
       shell: bash
       run: |

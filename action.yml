@@ -156,3 +156,6 @@ runs:
         
         chmod +x ~/.local/bin/jython;
         echo ~/.local/bin >> $GITHUB_PATH
+        echo ${{ github.workspace }}/.local/bin >> $GITHUB_PATH
+
+        cat $GITHUB_PATH
