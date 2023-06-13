@@ -61,8 +61,12 @@ jobs:
         jython-version: "${{ matrix.jython_version }}"
 
     - name: Environment check
+      shell: bash
       run: |
+        echo "ENVIRONMENT VARIABLES"
         env
+        
+        echo "GITHUB_PATH"
         cat $GITHUB_PATH
       
     - name: Run Jython
