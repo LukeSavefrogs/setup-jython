@@ -69,7 +69,7 @@ jobs:
         echo "GITHUB_PATH"
         cat $GITHUB_PATH
       
-    - name: Run Jython
+    - name: Run Jython (Bash)
       shell: bash
       run: |
         output="$(jython -c 'import sys, os; print(os.name, sys.version); print "\n\nJython Works!\n\n"')";
@@ -79,7 +79,7 @@ jobs:
         which java
         which jython
 
-    - name: Run Jython
+    - name: Run Jython (Powershell)
       shell: pwsh
       if: ${{ runner.os == 'Windows' }}
       run: |
