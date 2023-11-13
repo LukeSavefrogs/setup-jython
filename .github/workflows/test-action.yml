@@ -68,10 +68,14 @@ jobs:
         
         echo "GITHUB_PATH"
         cat $GITHUB_PATH
+
+        cat ~/.local/bin/jython
       
     - name: Run Jython (Bash)
       shell: bash
       run: |
+        set +e;
+
         output="$(jython -c 'import sys, os; print(os.name, sys.version); print "\n\nJython Works!\n\n"')";
         echo "$output";
         echo "$output" | grep -q "Jython Works!";
