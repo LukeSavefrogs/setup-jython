@@ -144,7 +144,7 @@ runs:
         mkdir -p ~/.local/bin;
         case "${{ steps.find_installer.outputs.file_type }}" in
           class)
-            jython_cmd="java -cp ${installation_path}/jython.jar org.python.util.jython \"\$@\""
+            jython_cmd="java -verbose -Dpython.home='${installation_path}' -cp '${installation_path}/jython.jar:$CLASSPATH' org.python.util.jython \"\$@\""
           ;;
 
           jar)
