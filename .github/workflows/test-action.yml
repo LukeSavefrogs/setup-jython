@@ -76,9 +76,6 @@ jobs:
         echo "$output";
         echo "$output" | grep -q "Jython Works!";
 
-        which java
-        which jython
-
     - name: Run Jython (Powershell)
       shell: pwsh
       if: ${{ runner.os == 'Windows' }}
